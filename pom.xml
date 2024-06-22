@@ -7,12 +7,12 @@
  <packaging>war</packaging>
  <version>0.0.1-SNAPSHOT</version>
  
- <name>vin-solutions-app</name>
+ <name>giles-solutions-app</name>
 
  <description>CICD jenkins Java Project</description>
 
  <organization>
-  <name>Vin Technologies</name>
+  <name>Van-Giles Technologies</name>
   <url>http://vintech.com/</url>
  </organization>
 
@@ -22,13 +22,13 @@
   <spring.version>5.1.2.RELEASE</spring.version>
   <junit.version>4.11</junit.version>
   <log4j.version>1.2.17</log4j.version>
-  <sonar.host.url>sonarqube-url</sonar.host.url>
-  <sonar.login>sonarqube-login</sonar.login>
-  <sonar.password>sonarqube-passwd</sonar.password>
+  <sonar.host.url>http://54.90.24.91:9000/</sonar.host.url>
+  <sonar.login>admin</sonar.login>
+  <sonar.password>admin</sonar.password>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  <sonar.projectKey>sonarqube-token</sonar.projectKey>
-  <sonar.projectName>sonarqube-project-name</sonar.projectName>
+  <sonar.projectKey>squ_0e5ff901d347552d688b5fcc64ab0eb195cee341</sonar.projectKey>
+  <sonar.projectName>jenkins-project</sonar.projectName>
         
  </properties>
 
@@ -113,7 +113,7 @@
  </distributionManagement>
  
  <build>
-  <finalName>dev-init-app-v1</finalName>
+  <finalName>jenkins-project-v1</finalName>
   
   <plugins>
    <plugin>
