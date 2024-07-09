@@ -4,9 +4,9 @@ pipeline {
     environment {
         GITHUB_REPO_URL = 'https://github.com/TuntengVan/dev-init-app.git'
         BRANCH_NAME = 'main'  // Replace with your branch name if it's not 'main'
-        GITHUB_CREDENTIALS_ID = 'vin_github_cred'  // Replace with your Jenkins GitHub credentials ID
-        DOCKERHUB_CREDENTIALS_ID = 'jenkins-docker-cred'  // Replace with your Jenkins Docker Hub credentials ID
-        DOCKERHUB_REPO = 'vlonje20/vin-tour-ph'  // Replace with your Docker Hub repository
+        GITHUB_CREDENTIALS_ID = 'github-CICD-token'  // Replace with your Jenkins GitHub credentials ID
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-CICD-cred'  // Replace with your Jenkins Docker Hub credentials ID
+        DOCKERHUB_REPO = 'tuntengvan/van-repo'  // Replace with your Docker Hub repository
     }
 
     stages {
@@ -54,7 +54,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh "docker run --name vin-tour-ph-con --rm -d -p 8000:8080 ${env.DOCKERHUB_REPO}:latest"  // Run Docker container in detached mode
+                    sh "docker run --name robert-con --rm -d -p 8000:8080 ${env.DOCKERHUB_REPO}:latest"  // Run Docker container in detached mode
                 }
             }
         }
